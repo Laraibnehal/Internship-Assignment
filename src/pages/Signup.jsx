@@ -93,6 +93,7 @@ const Signup = () => {
           <CourseDetailsCard
             title={courseCardTitle}
             addCourseAction={() => {
+              if (formCompletedTill === forms.length - 1) return;
               setFormCompletedTill(formCompletedTill + 1);
             }}
             submitAction={() => {
@@ -101,6 +102,7 @@ const Signup = () => {
             backButtonAction={() => {
               setFormCompletedTill(formCompletedTill - 1);
             }}
+            addCourseHidden={formCompletedTill === forms.length - 1}
           />
         )}
       </div>

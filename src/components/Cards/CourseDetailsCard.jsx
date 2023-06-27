@@ -8,6 +8,7 @@ const CourseDetailsCard = ({
   addCourseAction,
   submitAction,
   backButtonAction,
+  addCourseHidden,
 }) => {
   return (
     <div className="course-details-card">
@@ -67,24 +68,26 @@ const CourseDetailsCard = ({
               }}
             ></i>
           </div>
-          <div style={{ width: '40%' }}>
-            <ButtonPrimary
-              label={'Add Course'}
-              action={addCourseAction}
-              backIcon={
-                <>
-                  <i
-                    className="fa-solid fa-circle-plus"
-                    style={{
-                      marginLeft: '5px',
-                      color: 'white',
-                    }}
-                  ></i>
-                </>
-              }
-            />
-          </div>
-          <div style={{ width: '40%' }}>
+          {!addCourseHidden && (
+            <div style={{ width: '40%' }}>
+              <ButtonPrimary
+                label={'Add Course'}
+                action={addCourseAction}
+                backIcon={
+                  <>
+                    <i
+                      className="fa-solid fa-circle-plus"
+                      style={{
+                        marginLeft: '5px',
+                        color: 'white',
+                      }}
+                    ></i>
+                  </>
+                }
+              />
+            </div>
+          )}
+          <div style={{ width: addCourseHidden ? '90%' : '40%' }}>
             <ButtonPrimary label={'Submit'} action={submitAction} />
           </div>
         </div>
@@ -93,4 +96,4 @@ const CourseDetailsCard = ({
   );
 };
 
-export default CourseDetailsCard;
+export default CourseDetailsCard
