@@ -1,0 +1,14 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+:root {
+  /* Colors Schemes */
+  --pink: #8b1874;
+  --gray: #394867;
+  --dark-gray: #2b3b5b;
+
+  /* Font Schemes */
+  --font-poppins: 'Poppins';
+  --font-roboto: 'Roboto';
+  --font-montserrat: 'Montserrat';
+}

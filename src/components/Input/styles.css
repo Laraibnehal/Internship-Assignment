@@ -1,0 +1,16 @@
+.input {
+  outline: none;
+  background: white;
+  border: 2px solid var(--pink) !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input:focus,
+.input:active {
+  border: 2px solid var(--pink) !important;
+}

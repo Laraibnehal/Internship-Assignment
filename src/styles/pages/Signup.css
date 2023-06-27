@@ -1,0 +1,16 @@
+.signup-page {
+  background: #f2f2f2;
+  width: 100vw;
+  min-height: 120vh;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}

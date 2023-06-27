@@ -1,0 +1,86 @@
+/* Importing Partials CSS */
+@import url('./partials/__partials.css');
+
+/* Importing Components CSS */
+@import url('./pages/Signup.css');
+@import url('./pages/Error.css');
+
+/* Overriding Global CSS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+textarea {
+  outline: none;
+  background: 'transparent';
+  border: none;
+  border-radius: 0px;
+  resize: none;
+}
+
+/* Custom Classes */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glassmorph {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  font-size: 20px;
+}
+
+span {
+  color: var(--pink);
+}
+
+.circle-bg {
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background: var(--pink);
+  opacity: 0.2;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+}
+
+.circle-sm {
+  position: absolute;
+  bottom: -50px;
+  left: 600px;
+  background: var(--pink);
+  opacity: 0.2;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}

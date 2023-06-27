@@ -1,0 +1,17 @@
+.navbar {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.nav-items > .fa-chevron-down {
+  color: var(--gray);
+}
