@@ -1,5 +1,5 @@
 {
-  "name": "create-react-avinash-app",
+  "name": "create-react-laraib-app",
   "version": "0.1.6",
   "bin": "./bin/cli.js",
   "dependencies": {
